@@ -1,0 +1,33 @@
+yum -y install ImageMagick
+
+yum install -y ImageMagick-devel ImageMagick-perl
+
+yum install -y gcc php-devel php-pear
+
+yum -y install libX11-devel libxml2-devel libxslt-devel freetype-devel flex bison
+
+yum -y groupinstall 'Development Tools'
+
+vim /etc/ImageMagick/policy.xml
+
+mkdir /usr/share/backgrounds/backup/
+
+add default.png to /usr/share/backgrounds/backup/
+
+mkdir /home/user/share/wallpaper/
+
+add wallpaper.sh to /home/user/share/wallpaper/
+
+vim wallpaper.sh, edit project name, make executable 
+
+add sh /home/user/share/wallpaper/wallpaper.sh to startup applications
+
+
+
+https://www.imagemagick.org/script/download.php
+
+rpm -Uvh ImageMagick-7.0.9-2.x86_64.rpm
+
+rpm -Uvh ImageMagick-libs-7.0.9-2.x86_64.rpm
+
+vim /etc/dconf/db/local.d/00-background
